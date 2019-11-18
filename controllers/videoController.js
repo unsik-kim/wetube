@@ -9,7 +9,7 @@ export const search = (req, res) => {
   } = req;
   //const searchingBy = req.query.term;  위와 같은 결과지만 또 다른 변수선언 방법
   console.log(term);
-  res.render("search", { pageTitle: "Search", searchingBy });
+  res.render("search", { pageTitle: "Search", searchingBy, videos });
 };
 export const upload = (req, res) =>
   res.render("upload", { pageTitle: "Upload" });
